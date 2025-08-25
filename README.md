@@ -9,31 +9,30 @@ Built with **FastAPI** (backend REST API), **MySQL** (database), and **Streamlit
 
 ### 1. **Clone the Repository**
 
-````sh
 git clone https://github.com/yourusername/srms.git
 cd srms
-2. Set Up Python Environment
+### 2. **Set Up Python Environment**
 python -m venv venv
 venv\Scripts\activate  # On Windows
 # Or
 source venv/bin/activate  # On Mac/Linux
-3. Install Dependencies
+### 3. **Install Dependencies**
 pip install -r [requirement.txt](http://_vscodecontentref_/0)
-4. Configure Environment Variables
+### 4. **Configure Environment Variables**
 Create a .env file in the project root<vscode_annotation details='%5B%7B%22title%22%3A%22hardcoded-credentials%22%2C%22description%22%3A%22Embedding%20credentials%20in%20source%20code%20risks%20unauthorized%20access%22%7D%5D'>: </vscode_annotation><vscode_annotation details='%5B%7B%22title%22%3A%22hardcoded-credentials%22%2C%22description%22%3A%22Embedding%20credentials%20in%20source%20code%20risks%20unauthorized%20access%22%7D%5D'> </vscode_annotation>``` DB_USER=root DB_PASS=your_mysql_password DB_NAME=student_db DB_HOST=localhost
 ### 5. **Set Up MySQL Database**
 
 - Create the database and user if not already present:
 
-```sql
+sql
 CREATE DATABASE student_db;
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'your_mysql_password';
 GRANT ALL PRIVILEGES ON student_db.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 
-6. Run the FastAPI Backend
+### 6. **Run the FastAPI Backend**
 API docs available at: http://127.0.0.1:8000/docs
-7. Run the Streamlit Dashboard
+### 7. Run the Streamlit Dashboard**
 Dashboard available at: http://localhost:8501
 🏗️ Architecture
 Overview
